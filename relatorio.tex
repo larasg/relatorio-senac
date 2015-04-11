@@ -1,20 +1,18 @@
-\documentclass[a4paper,11pt]{report}
+\documentclass[a4paper,11pt]{abnt}
 \usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-% pacote babel ou equivalent
+\usepackage{graphicx} 
+\usepackage{float}
 
-\title{}
-\author{}
+
+\renewcommand{\ABNTchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+\renewcommand{\ABNTsectionfont}{\fontfamily{cmr}\fontseries{b}}
+\renewcommand{\tituloformat}{\large\bfseries}
+
 
 \begin{document}
+\include {capa}
 
-\maketitle
 \tableofcontents
-
-\begin{abstract}
-\end{abstract}
-
-\chapter{}
-
 \end{document}
