@@ -31,69 +31,70 @@ Permitir que o funcionário tenha acesso direto aos dados efetuados internamente
 
 \subsection{Fornecer um software com estabilidade}
 Permitir que o software com o java instalado seja executado em qualquer sistema operacional sendo eles: Linux, Windows ou Mac;
-
+	
 
 \section{Escopo do Projeto}
 
-O escopo do projeto, descrito na tabela \ref{tabela_escopo}, foi criado a partir do desenvolvimento 
-em sala de aula.
+O escopo do projeto foi criado a partir do desenvolvimento em sala de aula;
 
-\begin{table}[ht]
-\centering
-\caption{Descrição e duração de cada atividade do projeto.}
-\begin{tabular}[c]{|c|l|c|}\hline
-
+{%
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+\definecolor{tcA}{rgb}{0.909804,0.909804,0.909804}
+\begin{center}
+\begin{tabular}{cc}
 % use packages: color,colortbl
-
-\textbf{N} & \textbf{Descrição} & \textbf{Tempo de execução} \\\hline
-
-1 & Entrevista com a empresa & 03h00min\\\hline
-
-2 & Levantamento das ideias para o desenvolvimento do software & 06h00min\\\hline
-
-3 & Conversa com a empresa e conclusão das ideias obtidas & 03h00min\\\hline
-
-4 & Levantamento dos requisitos funcionais e não funcionais & 09h00min\\\hline
-
-5 & Criação dos casos de usos & 06h00min\\\hline
-
-6 & Criação do layout do programa & 06h00min\\\hline
-
-7 & Desenvolvimento do banco de dados em Mysql & 06h00min\\\hline
-
-8 & Criação do software em Java & 90h00min\\\hline
-
-9 & Teste do software & 09h00min\\\hline
-
-10 & Criação da documentação do projeto & 15h00min\\\hline
+\rowcolor{tcA}
+Descrição & Tempo de execução\\
+\rowcolor{tcA}
+\mc{1}{l}{1- Entrevista com a empresa} & 03h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{2- Levantamento das ideias para o desenvolvimento do software} & 06h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{3- Conversa com a empresa - Conclusão das ideias obtidas} & 03h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{4 – Levantamento dos requisitos funcionais e não funcionais} & 09h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{5 – Criação dos casos de usos} & 06h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{6 – Criação do layout do programa} & 06h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{7 – Desenvolvimento do banco de dados em Mysql} & 06h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{8 – Criação do software em Java} & 90h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{9 -  Teste do software} & 09h00min\\
+\rowcolor{tcA}
+\mc{1}{l}{10 – Criação da documentação do projeto} & 15h00min
 \end{tabular}
-\label{tabela_escopo}
-\end{table}
+\end{center}
+}%
+
+
 
 Descrição do escopo do projeto:
 
 \begin {enumerate}
 
-\item Entrevista com a empresa: Foi avaliado o funcionamento da mesma, e extrairmos as ideias de como um software poderia auxiliar nas operações realizadas internamente;
+\item Entrevista com a empresa- Foi avaliado o funcionamento da mesma, e extrairmos as ideias de como um software poderia auxiliar nas operações realizadas internamente;
 
-\item Levantamento das ideias para o desenvolvimento do software: Após a avaliação com o cliente obteve-se varias ideias, algumas delas foram desenvolvidas, já outras foram desfeitas, pelo fato de não ser tão primordial ao processo de desenvolvimento do software, onde será citado a diante;
+\item Levantamento das ideias para o desenvolvimento do software – Após a avaliação com o cliente obteve-se varias ideias, algumas delas foram desenvolvidas, já outras foram desfeitas, pelo fato de não ser tão primordial ao processo de desenvolvimento do software, onde será citado a diante;
 
-\item Conversa com a empresa: Conclusão das ideias obtidas: Logo após expor as ideias ao cliente, teve-se como retorno a aprovação do software;
-
-
-\item Levantamento dos requisitos funcionais e não funcionais: Realizou-se os levantamentos dos requisitos;
-
-\item Criação dos casos de usos: Desenvolveu-se o caso de uso a partir das requisições levantadas;
-
-\item Criação do layout do programa: Com os casos de usos e os levantamentos dos requisitos  concluídos, desenvolveu-se o layout do programa, preocupando-se com a usualidade das operações realizadas pelos usuários;
-
-\item Desenvolvimento do banco de dados em Mysql: Ponto importante na criação do software, aqui serão armazenados todas as informações de cadastros;
-
-\item Criação do software em Java: Desenvolvimento do projeto;
+\item Conversa com a empresa - Conclusão das ideias obtidas-  Logo após expor as ideias ao cliente, teve-se como retorno a aprovação do software;
 
 
-\item Teste do software: Realiza-se as precauções necessárias, e são consertados bugs no sistema;
+\item Levantamento dos requisitos funcionais e não funcionais  - Realizou-se os levantamentos dos requisitos;
 
-\item Criação da documentação do projeto: desenvolvimento do relatório;
+\item Criação dos casos de usos  - Desenvolveu-se o caso de uso a partir das requisições levantadas;
+
+\item Criação do layout do programa – Com os casos de usos e os levantamentos dos requisitos  concluídos, desenvolveu-se o layout do programa, preocupando-se com a usualidade das operações realizadas pelos usuários;
+
+\item Desenvolvimento do banco de dados em Mysql – Ponto importante na criação do software, aqui serão armazenados todas as informações de cadastros;
+
+\item Criação do software em Java – Desenvolvimento do projeto;
+
+
+\item Teste do software – Realiza-se as precauções necessárias, e são consertados bugs no sistema;
+
+\item Criação da documentação do projeto – desenvolvimento do relatório;
 
 \end{enumerate}
