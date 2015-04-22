@@ -164,6 +164,30 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+\begin{table}[H]
+\caption{Tabela Cliente}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Restrições \\ \hline
+CPF & Chave primária. CPF do cliente & Char & 14 & Validar \\ \hline
+Nome & Nome dos cliente & Char & 40 & - \\ \hline
+Estado & Estado onde o cliente reside & Char & 2 & - \\ \hline
+Cidade & Cidade do cliente reside& Char & 30 & - \\ \hline
+Bairro & Bairro do cliente reside& Char & 30 & - \\ \hline
+Rua & Rua da residência do cliente& Char & 45 & - \\ \hline
+Número & Número da residência do cliente & Int & 6 & - \\ \hline
+Celular & Celular do cliente & Char & 14 & - \\ \hline
+Telefone & Telefone fixo do cliente & Char & 14 & - \\ \hline
+CEP & CEP do cliente & Char & 10 & - \\ \hline
+Complemento & Complemento da residência& Char & 200 & - \\ \hline
+E-mail & E-mail do cliente & Char & 45 & - \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_cliente}
+\end{table}
+
+%========================================================================================
 
 \begin{figure}[H]
 	\centering 
@@ -173,6 +197,34 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+
+\begin{table}[H]
+\caption{Tabela Funcionario}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Restrições \\ \hline
+CPF & Chave primária. CPF do funcionário & Char & 14 & Validar \\ \hline
+Nome & Nome do funcionário & Char & 40 & - \\ \hline
+Estado & Estado onde o funcionário reside & Char & 2 & - \\ \hline
+Cidade & Armazena a cidade onde o funcionário reside & Char & 30 & - \\ \hline
+Bairro & Bairro onde o funcionário reside & Char & 30 & - \\ \hline
+Rua & Armazena a rua da residência do funcionário & Char & 45 & - \\ \hline
+Número & Número da residência do funcionário & Int & 6 & - \\ \hline
+Celular & Celular do funcionário & Char & 14 & - \\ \hline
+Telefone & Telefone fixo do funcionário & Char & 14 & - \\ \hline
+CEP & CEP do funcionário & Char & 10 & - \\ \hline
+Complemento & Complemento do endereço & Char & 200 & - \\ \hline
+E-mail & E-mail do funcionário & Char & 45 & - \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_funcionario}
+\end{table}
+
+
+
+%========================================================================================
+
 \begin{figure}[H]
 	\centering 
 	\caption{Banco de dados Fornecedor}
@@ -181,7 +233,32 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+\begin{table}[H]
+\caption{Tabela Fornecedor}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Restrições \\ \hline
+CNPJ & Chave primária. CNPJ dos fornecedores & Char & 18 & Validar \\ \hline
+Nome & Nomes dos fornecedores & Char & 40 & - \\ \hline
+Estado & Estado onde o fornecedor tem sede & Char & 2 & - \\ \hline
+Cidade & Cidade onde é a sede dos fornecedores & Char & 30 & - \\ \hline
+Bairro & Bairro onde fica a sede dos fornecedores & Char & 30 & - \\ \hline
+Rua & Rua onde fica a sede dos fornecedores & Char & 45 & - \\ \hline
+Número & Número da sede dos fornecedores & Int & 6 & - \\ \hline
+Celular & Celular dos fornecedores & Char & 14 & - \\ \hline
+Telefone & Telefone fixo dos fornecedores & Char & 14 & - \\ \hline
+CEP & CEP dos fornecedores & Char & 10 & - \\ \hline
+Complemento & Complemento do endereço & Char & 200 & - \\ \hline
+E-mail & E-mail dos fornecedores & Char & 45 & - \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_fornecedor}
+\end{table}
 
+
+
+%========================================================================================
 \begin{figure}[H]
 	\centering 
 	\caption{Banco de dados Venda}
@@ -190,7 +267,27 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+\begin{table}[H]
+\caption{Tabela venda de produto}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome      & Descrição & Tipo & Tamanho & Formato \\ \hline
+Código    & Chave primária. Armazena o código da venda & Int & - & Auto \\ 
+Venda     &                                            &     & - & Incremento \\ \hline
+CPF & Chave estrangeira de Funcionário.      & Char & 11 & - \\ 
+Funcionário & Indica que funcionário efetuou a venda &       &    & \\ \hline
+CPF  & Chave estrangeira de Cliente.        & Char & 11 & - \\ 
+Cliente & Indica qual cliente efetuou a compra &       &    &  \\ \hline
+Código  & Chave estrangeira de Livro.    & Char & 8 & - \\ 
+Livro & Indica qual livro foi vendido. &       &   & \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_venda_produto}
+\end{table}
 
+
+%========================================================================================
 
 \begin{figure}[H]
 	\centering 
@@ -200,7 +297,27 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+\begin{table}[H]
+\caption{Tabela compra de produto}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Formato \\ \hline
+Código & Chave primária de Compra de Produto. & Int & - & Auto \\ 
+Compra & Armazena o código de compra.         &         &   & Incremento\\ \hline
+CPF  & Chave estrangeira da entidade Funcionário. & Char & 11 & - \\ 
+Funcionário & Indica qual funcionário efetuou a venda.   &       &    &  \\ \hline
+CNPJ & Chave estrangeira da entidade Fornecedor.    & Char & 18 & - \\ 
+Fornecedor & Indica qual fornecedor vendeu dado produto. &       &    & \\ \hline
+Código & Chave estrangeira da entidade Livro.& Char & 8 & - \\ 
+Livro  & Indica qual livro foi comprado.     &       &   &   \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_compra_produto}
+\end{table}
 
+
+%========================================================================================--
 \begin{figure}[H]
 	\centering 
 	\caption{Banco de dados Livros}
@@ -208,6 +325,22 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\includegraphics[scale = 0.8]{imagens/bd-livro.png}
 	\\Fonte: Do autor
 \end{figure}
+
+\begin{table}[H]
+\caption{Tabela Livro}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Restrições \\ \hline
+ Código & Chave primária. Armazena o código do livro & Char & 8 & - \\ \hline
+ Nome  & Armazena o nome dos livros & Char & 30 &- \\ \hline
+ Autor & Armazena o autor dos livros & Char & 30 &- \\ \hline
+ Categoria  & Armazena a categoria dos livros  & Char & 20 &- \\ \hline
+ Descrição  & Armazena a descrição dos livros  & Char & 200 &- \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_livro}
+\end{table}
 
 
 
@@ -254,6 +387,7 @@ Ao abrir o software a tela de login é exibida, mostrando os campos “usuário�
 	\\Fonte: Do autor
 \end{figure}
 
+<<<<<<< HEAD
 
 %===================================================================================================
 \subsection{Tela Principal do Software}
@@ -452,10 +586,4 @@ Mostra as informações do desenvolvedor do software;
 	\includegraphics[scale = 0.6]{imagens/tela-sobre.png}
 	\\Fonte: Do autor
 \end{figure}
-
-
-
-
-
-
 
