@@ -155,25 +155,3 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 %==================================================================================
 \section{Contrução do banco de dados}
 \subsection{Tabela cliente}
-%
-\begin{table}
- \centering
- \caption{Tabela cliente}
-\begin{tabular}{|c|l|c|c|c|c|}\hline
-\textbf{Nome} & \textbf{Descrição} & \textbf{Tipo} & \textbf{Tamanho} & \textbf{Formato} & \textbf{Restrições}\\\hline
-CPF & \left \mc{1}{c|}{É a chave primária da entidade cliente e o atributo responsável para se armazenar o CPF do cliente} & Texto & 14 & \#\#\#.\#\#\#.\#\#\#-\#\# & Deve ser um CPF válido\\\hline
-Nome & \mc{1}{l|}{É o atributo usado para armazenar os nomes dos cliente} & Texto & 40 & - & -\\\hline
-Estado & \mc{1}{l|}{É o atributo responsável para armazenar o estado onde o cliente mora} & Texto & 2 & - & -\\\hline
-Cidade & \mc{1}{l|}{É o atributo responsável para armazenar a cidade onde o cliente mora} & Texto & 30 & - & -\\\hline
-Bairro & \mc{1}{l|}{É o atributo responsável para armazenar o bairro onde o cliente mora} & Texto & 30 & - & -\\\hline
-Rua & \mc{1}{l|}{É o atributo responsável para armazenar a rua onde o cliente mora} & Texto & 45 & - & -\\\hline
-Número da Casa & \mc{1}{l|}{É o atributo responsável para armazenar o número da casa do cliente} & Inteiro & 6 & - & -\\\hline
-Celular & \mc{1}{l|}{É o atributo responsável para armazenar o celular do cliente} & Texto & 14 & (##)####-#### & -\\\hline
-Telefone & \mc{1}{l|}{É o atributo responsável para armazenar o telefone fixo do cliente} & Texto & 14 & (##)####-#### & -\\\hline
-CEP & \mc{1}{l|}{É o atributo responsável para armazenar o CEP do cliente} & Texto & 10 & #####.### & -\\\hline
-Complemento & \mc{1}{l|}{É o atributo responsável para armazenar algum complemento (ponto de referência do endereço)} & Texto & 200 & - & -\\\hline
-E-mail & \mc{1}{l|}{É o atributo responsável para armazenar o e-mail do cliente} & Texto & 45 & - & -\\\hline
- \end{tabular}
- \label{tabela_cliente}
-
-\end{table}

@@ -156,24 +156,29 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 \section{Contrução do banco de dados}
 \subsection{Tabela cliente}
 %
-\begin{table}
- \centering
- \caption{Tabela cliente}
-\begin{tabular}{|c|l|c|c|c|c|}\hline
-\textbf{Nome} & \textbf{Descrição} & \textbf{Tipo} & \textbf{Tamanho} & \textbf{Formato} & \textbf{Restrições}\\\hline
-CPF & \left É a chave primária da entidade cliente e o atributo responsável para se armazenar o CPF do cliente & Texto & 14 & \#\#\#.\#\#\#.\#\#\#-\#\# & Deve ser um CPF válido\\\hline
-Nome & \left É o atributo usado para armazenar os nomes dos cliente & Texto & 40 & - & -\\\hline
-Estado & \text\left É o atributo responsável para armazenar o estado onde o cliente mora & Texto & 2 & - & -\\\hline
-Cidade & \left É o atributo responsável para armazenar a cidade onde o cliente mora & Texto & 30 & - & -\\\hline
-Bairro & \left É o atributo responsável para armazenar o bairro onde o cliente mora & Texto & 30 & - & -\\\hline
-Rua & \left É o atributo responsável para armazenar a rua onde o cliente mora & Texto & 45 & - & -\\\hline
-Número da Casa & \left É o atributo responsável para armazenar o número da casa do cliente & Inteiro & 6 & - & -\\\hline
-Celular & \left É o atributo responsável para armazenar o celular do cliente & Texto & 14 & (\#\#)\#\#\#\#-\#\#\#\# & -\\\hline
-Telefone & \left É o atributo responsável para armazenar o telefone fixo do cliente & Texto & 14 & (\#\#)\#\#\#\#-\#\#\#\# & -\\\hline
-CEP & \left É o atributo responsável para armazenar o CEP do cliente & Texto & 10 & \#\#\#\#\#.\#\#\# & -\\\hline
-Complemento & \left É o atributo responsável para armazenar algum complemento (ponto de referência do endereço) & Texto & 200 & - & -\\\hline
-E-mail & \left É o atributo responsável para armazenar o e-mail do cliente & Texto & 45 & - & -\\\hline
- \end{tabular}
- \label{tabela_cliente}
-
+\begin{table}[htbp]
+\caption{Tabela Cliente}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Nome & Descrição & Tipo & Tamanho & Formato & Restrições \\ \hline
+CPF & Chave primária da entidade cliente e o atributo responsável para se armazenar o CPF do cliente & Texto & 14 & ###.###.###-## & CPF válido \\ \hline
+Nome & É o atributo usado para armazenar os nomes dos cliente & Texto & 40 & - & - \\ \hline
+Estado & Atributo responsável para armazenar o estado onde o cliente mora & Texto & 2 & - & - \\ \hline
+Cidade & Atributo responsável para armazenar a cidade onde o cliente mora & Texto & 30 & - & - \\ \hline
+Bairro & Atributo responsável para armazenar o bairro onde o cliente mora & Texto & 30 & - & - \\ \hline
+Rua & Atributo responsável para armazenar a rua onde o cliente mora & Texto & 45 & - & - \\ \hline
+Número & Atributo responsável para armazenar o número da casa do cliente & Inteiro & 6 & - & - \\ \hline
+Celular & Atributo responsável para armazenar o celular do cliente & Texto & 14 & (##)####-#### & - \\ \hline
+Telefone & Atributo responsável para armazenar o telefone fixo do cliente & Texto & 14 & (##)####-#### & - \\ \hline
+CEP & Atributo responsável para armazenar o CEP do cliente & Texto & 10 & #####.### & - \\ \hline
+Complemento & Atributo responsável para armazenar algum complemento (ponto de referência do endereço) & Texto & 200 & - & - \\ \hline
+E-mail & Atributo responsável para armazenar o e-mail do cliente & Texto & 45 & - & - \\ \hline
+\end{tabular}
+\end{center}
+\label{tabela_cliente}
 \end{table}
+%
+%
+%
+%
