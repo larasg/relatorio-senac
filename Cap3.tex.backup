@@ -150,30 +150,278 @@ O fluxograma é fundamental para simplificação e racionalização do trabalho,
 	\\Fonte: Do autor
 \end{figure}
 
+
+%===================================================================================================
 \newpage
+\section{Construção do Banco de dados}
 
-%==================================================================================
-\section{Contrução do banco de dados}
-\subsection{Tabela cliente}
-%
-\begin{table}
- \centering
- \caption{Tabela cliente}
-\begin{tabular}{|c|l|c|c|c|c|}\hline
-\textbf{Nome} & \textbf{Descrição} & \textbf{Tipo} & \textbf{Tamanho} & \textbf{Formato} & \textbf{Restrições}\\\hline
-CPF & \left É a chave primária da entidade cliente e o atributo responsável para se armazenar o CPF do cliente & Texto & 14 & \#\#\#.\#\#\#.\#\#\#-\#\# & Deve ser um CPF válido\\\hline
-Nome & \left É o atributo usado para armazenar os nomes dos cliente & Texto & 40 & - & -\\\hline
-Estado & \text\left É o atributo responsável para armazenar o estado onde o cliente mora & Texto & 2 & - & -\\\hline
-Cidade & \left É o atributo responsável para armazenar a cidade onde o cliente mora & Texto & 30 & - & -\\\hline
-Bairro & \left É o atributo responsável para armazenar o bairro onde o cliente mora & Texto & 30 & - & -\\\hline
-Rua & \left É o atributo responsável para armazenar a rua onde o cliente mora & Texto & 45 & - & -\\\hline
-Número da Casa & \left É o atributo responsável para armazenar o número da casa do cliente & Inteiro & 6 & - & -\\\hline
-Celular & \left É o atributo responsável para armazenar o celular do cliente & Texto & 14 & (\#\#)\#\#\#\#-\#\#\#\# & -\\\hline
-Telefone & \left É o atributo responsável para armazenar o telefone fixo do cliente & Texto & 14 & (\#\#)\#\#\#\#-\#\#\#\# & -\\\hline
-CEP & \left É o atributo responsável para armazenar o CEP do cliente & Texto & 10 & \#\#\#\#\#.\#\#\# & -\\\hline
-Complemento & \left É o atributo responsável para armazenar algum complemento (ponto de referência do endereço) & Texto & 200 & - & -\\\hline
-E-mail & \left É o atributo responsável para armazenar o e-mail do cliente & Texto & 45 & - & -\\\hline
- \end{tabular}
- \label{tabela_cliente}
 
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Cliente}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-cliente.png}
+	\\Fonte: Do autor
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Funcionario}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-func.png}
+	\\Fonte: Do autor
+\end{figure}
+
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Fornecedor}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-fornecedor.png}
+	\\Fonte: Do autor
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Venda}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-venda.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Compra}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-compra.png}
+	\\Fonte: Do autor
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Banco de dados Livros}
+	\label{banco_de_dados}
+	\includegraphics[scale = 0.8]{imagens/bd-livro.png}
+	\\Fonte: Do autor
+\end{figure}
+
+
+
+
+%===================================================================================================
+\newpage
+\section{Detalhamento das telas do software}
+
+\subsection{Tela login}
+
+ A tela de login é a primeira tela a ser exibida ao usuário, foi desenvolvido com o intuito de assegurar a empresa de que somente pessoas autorizadas terão acesso as demais telas;
+
+ \begin{figure}[H]
+	\centering 
+	\caption{Tela de login do software}
+	\label{login software}
+	\includegraphics[scale = 0.8]{imagens/tela-login.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+Ao abrir o software a tela de login é exibida, mostrando os campos “usuário” e “senha”;
+ 
+\begin {itemize} 
+
+\item No campo “usuário” terá três opções: “Gerente”, “Vendedor”, “Caixa”, e no campo “senha” terá que ser digitado: “empresa123”, essa senha é utilizada por todos os três tipos de usuários;
+
+\itemHavendo também  dois botões, um para “cancelar” e outro “acessar” o software;
+
+\item Se o botão “Cancelar” for pressionado é exibida uma mensagem: “Tem certeza que deseja cancelar a operação? ” se “sim” a mensagem de aviso é fechada e o programa é automaticamente encerrado;
+
+\item Se no botão “cancelar” for pressionado juntamente com o botão “não” é fechado a mensagem de aviso, e retorna para a tela de login;
+
+\item Se o botão “Acessar” for pressionado o software verifica se a senha está correta, a tela de login é encerrada e a tela principal do software é exibida. 
+
+\item Caso a senha esteja incorreta, ou não foi preenchido o software exibe uma mensagem “Senha incorreta” e limpa o campo para que o usuário possa digitar novamente.
+\end{itemize}
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Tela de login do software - com mensagem}
+	\label{login software}
+	\includegraphics[scale = 0.8]{imagens/tela-login-senha.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+%===================================================================================================
+\subsection{Tela Principal do Software}
+
+ Essa é a tela principal do software, todas as telas sendo de “Cadastro”, “Consulta”, “Editar”, “Deletar” ou “Sobre” 
+ são inseridos sobre a tela principal, nela são exibidos os menus e os submenus das operações como “Cliente”, “Funcionário”,
+ “Fornecedor”, “Livros”. Optamos por deixar  simples seu manuseio. Fazendo com que qualquer pessoa leiga na área da informática
+ possa realizar as operações sem dificuldades;
+ 
+ \begin{figure}[H]
+	\centering 
+	\caption{Tela principal do software}
+	\label{tela-principal}
+	\includegraphics[scale = 0.7]{imagens/tela-principal.jpg}
+	\\Fonte: Do autor
+\end{figure}
+ 
+ 
+ \begin{itemize}
+  \item Na tela principal do software exibe um menu com as seguintes informações “Cadastrar”, “Consultar”, “Editar”,
+  “Deletar”, “Sobre”;
+  
+  \item Entre as opções  “Cadastrar”, “Consultar”, “Editar”, “Deletar”,  ao ser selecionada será exibido um submenu com as 
+  informações respectivamente:   “Cliente”, “Funcionário”, “Fornecedor”, “Livros”, onde poderá executar as demais operações;
+ \end{itemize}
+ 
+ 
+ \begin{figure}[H]
+	\centering 
+	\caption{Tela principal do software com os submenus}
+	\label{principal-menu}
+	\includegraphics[scale = 0.8]{imagens/tela-principal-menu.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+
+%===================================================================================================
+\subsection{Tela de Cadastro}
+
+Os Clientes, funcionários, fornecedores, e os livros terão respectivamente sua tela de cadastro, nela o funcionário 
+da empresa preenchera com os dados em cada uma das TextField apresentadas em suas telas, após preencher os dados, o 
+programa seleciona os campos e armazena as informações digitadas na base de dados;
+
+\begin{itemize}
+ \item Se o usuário pressionar a opção do menu “cadastrar”, exibe os submenus de “Cliente”, “Funcionário”, “Fornecedor”, “Livros”;
+ \item Em todas as telas de “Cadastro” conterá dois botões um “Cadastrar” e “Cancelar”;
+\end{itemize}
+
+ \begin{figure}[H]
+	\centering 
+	\caption{Tela de cadastro - Exemplo Cliente}
+	\label{cadastro_cliente}
+	\includegraphics[scale = 0.6]{imagens/cadastro-cliente.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+\begin{figure}[H]
+	\centering 
+	\caption{Tela de cadastro - Exemplo Livro}
+	\label{cadastro_livro}
+	\includegraphics[scale = 0.6]{imagens/tela-cadastro-livro.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+\begin{itemize}
+ \item Se o botão selecionado for “Cadastrar”, o programa verifica se o  CPF e o nome foram preenchidos, se “não” é exibido uma mensagem de aviso: “Insira o nome ou CPF”; se “sim” retem as informações e armazenas no banco de dados;
+
+ \item Outra precalçam feita no software é na verificação se o CPF já foi armazenado no banco de dados, se “sim” retorna uma mensagem de aviso : “Cliente já cadastrado”;
+
+  \item Se o botão pressionado for “Cancelar”  é exibida uma mensagem: “Tem certeza que deseja cancelar a operação? ” se “sim” a mensagem de aviso é fechada e o programa retorna para a tela principal; Se “não” a mensagem é fechada e permanece na tela de cadastro;
+
+\end{itemize}
+
+
+
+
+%===================================================================================================
+\subsection{Tela de Consulta}
+
+A  tela de consulta foi criada para auxiliar a empresa nas consultas de seus cadastros, cada classe possui
+um atributo principal sendo eles: 
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}\hline
+\textbf{Classe} & \textbf{Atributo Principal}\\\hline
+Cliente & CPF\\\hline
+Funcionário & CPF\\\hline
+Fornecedor & CNPJ\\\hline
+Livros & CODIGO DO LIVRO\\\hline
+\end{tabular}
 \end{table}
+
+Esse atributos terão que ser digitados para que a consulta seja executada, pois seleciona o atributo principal
+e verifica se foi cadastrado no banco de dados;
+
+\begin{itemize}
+ \item Se o usuário pressionar a opção do menu “consultar, exibe os submenus de “Cliente”, “Funcionário”, “Fornecedor”, “Livros”;
+
+
+ \item Em todas as tela de “Consulta” será exibido um campo para que o usuário preencha com o atributo principal de cada uma das operações;
+
+ \item Os demais campo como os de “Nome”,  “Telefone fixo”, “Telefone Celular”, “e-mail”, “Rua”, “Número”, “Bairro”, “Estado”, “Cidade”, “CEP”, “Complemento” ficam inativos, o usuário não consegue digitar nada nesses campos somente no atributo principal;
+\end{itemize}
+
+\begin{figure}[H]
+	\centering 
+	\caption{Tela de consulta - Exemplo Cliente}
+	\label{consulta_cliente}
+	\includegraphics[scale = 0.7]{imagens/tela-consulta-cliente.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering 
+	\caption{Tela de consulta - Exemplo Livro}
+	\label{consulta_livro}
+	\includegraphics[scale = 0.7]{imagens/tela-consulta-livro.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+
+
+\begin{itemize}
+ \item Após digitar o atributo principal o usuário pressiona o botão pesquisar. Pois os outros botões e os campos ficam inativos, onde impede que o usuário pressione ou digite algo neles;
+
+ \item Ao ser pressionado o pesquisar o programa verifica no banco de dados se existe algum cliente com aquele determinado CPF, se “sim” retorna os dados do cliente. Se na busca o programa não encontrar nenhum cadastro feito com o CPF digitado, é exibido uma mensagem: “Cliente não cadastrado”; 
+
+ \item Se nesta mesma tela o for pressionado o botão “voltar”, a tela atual de consulta é fechada e volta para a tela principal;
+\end{itemize}
+
+
+%===================================================================================================
+\subsection{Tela de Editar}
+
+A  tela de editar foi criada com o intuito de auxiliar os funcionários da empresa a fazer edições dos cadastros, por exemplo:
+um cliente mudou de endereço, o funcionário faz a pesquisa no banco de dados, e tem acesso as informações deste cliente, e pode
+editar as informações como o do endereço;
+
+\begin{itemize}
+ \item Se for pressionar a opção do menu “editar”, também são exibidos os submenus de “Cliente”, “Funcionário”, “Fornecedor”, “Livros”; 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering 
+	\caption{Tela de editar - Exemplo Cliente}
+	\label{editar_cliente}
+	\includegraphics[scale = 0.6]{imagens/tela-editar-cliente.jpg}
+	\\Fonte: Do autor
+\end{figure}
+
+\begin{itemize}
+ \item Todos os campos ficam inativos, enquanto o usuário não digitar o CPF, e ele for encontrado na base de dados;
+
+ \item Se CPF for cadastrado no software ao pesquisar ele retorna os dados do cliente, e os campo deixam de ser inativos e retorna os dados do cliente, caso seja necessário a edição de algum campo o usuário deleta o que foi digitado ou acrescenta e atualiza no banco de dados com o botão;
+
+ \item O botão “atualizar registro”, é utilizado para atualizar no banco de dados a nova informação do cliente. Com o seguinte código:
+ \end{itemize}
+ 
+ 
+ %===================================================================================================
+\subsection{Tela de Deletar}
+
+
+
+
+
